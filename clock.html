@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<link rel="stylesheet" href="clockstyle.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p {
@@ -11,12 +12,13 @@ p {
 </style>
 </head>
 <body>
-    <p id="days"></p>
-    <p id="hours"></p>
-    <p id="mins"></p>
-    <p id="secs"></p>
+    <div class = "date-countdown-container">
+    <h2 id="days"></h2>
+    <h2 id="hours"></h2>
+    <h2 id="mins"></h2>
+    <h2 id="secs"></h2>
     <p id="lbl"></p>
-    <h2 id="end"></h2>
+</div>
     <script>
     // The data/time we want to countdown to
     var countDownDate = new Date("Aug 13, 2022 0:00:00").getTime();
@@ -38,7 +40,7 @@ p {
     document.getElementById("hours").innerHTML = hours + "h " 
     document.getElementById("mins").innerHTML = minutes + "m " 
     document.getElementById("secs").innerHTML = seconds + "s " 
-    document.getElementById("lbl").innerHTML = "until I get to see you"
+    document.getElementById("lbl").innerHTML = "until I get to see you :)"
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc);
