@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
   
+
   body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -18,6 +19,10 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    padding-top:10px;
+    padding-left:20px;
+    display:block;
+
   }
   
   .date-countdown-container h2{
@@ -36,4 +41,20 @@
     border: 2px solid #fff;
     -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+
+
+  #myprogressBar {
+    width: 1%;
+    height: 35px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 32px;
+    color: black;
+    display:block;
+  }
+
+  #Progress_Status {
+    width: 50%;
+    background-color: #ddd;
   }
