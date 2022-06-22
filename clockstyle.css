@@ -10,7 +10,7 @@
     height: 100vh;
     width: 100%;
     background: rgb(102, 51, 153);
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -52,11 +52,13 @@
     text-align: center;
     line-height: 32px;
     color: black;
-    display:block;
+    display:flex;
+    justify-content: center; 
   }
 
   #Progress_Status {
     width: 50%;
     background-color: #ddd;
-    display:block;
+    display:flex;
+    justify-content: center; 
   }
