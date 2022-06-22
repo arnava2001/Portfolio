@@ -57,7 +57,7 @@ p {
     }
 
     var i = 0;
-    var progress = (89-days)/89 * 100;
+    var progress = (89*24*60*60-days*24*60*60)/89*24*60*60 * 100;
     console.log(progress);
     var elem = document.getElementById("myprogressBar");
     progress = Math.round(progress * 100) / 100
